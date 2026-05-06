@@ -9,7 +9,12 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-html { scroll-behavior: smooth; }
+html, body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+}
 
 :root {
     --cyan: rgb(0, 195, 255);
@@ -174,11 +179,20 @@ section .title::after {
 }
 
 /* HOME */
-.home {
-    height: 100vh; min-height: 600px;
-    position: relative; overflow: hidden;
-    display: flex; align-items: center; justify-content: center;
-    font-family: 'Ubuntu', sans-serif; z-index: 1;
+.home{
+    width: 100%;
+    min-height: 100vh;
+    padding: 120px 20px 80px;
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Ubuntu', sans-serif;
+    z-index: 1;
 }
 .home-video { position: absolute; inset: 0; z-index: 1; }
 .home-video video { width: 100%; height: 100%; object-fit: cover; opacity: 0.32; }
@@ -187,7 +201,7 @@ section .title::after {
     background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.05) 50%, rgba(0,0,0,0.75) 100%);
 }
 .home-content {
-    position: relative; z-index: 3; bottom: -23%;
+    position: relative; z-index: 3; bottom: 0;
     text-align: center; color: #fff; padding: 0 20px;
 }
 .greeting-line {
@@ -653,6 +667,7 @@ footer .fas.fa-heart {color: #ff4d6d; position: bottom;}
     .about .about-content .left,
     .about .about-content .right { flex: 0 0 100%; }
 }
+@media (max-width: 480px) { .max-width { padding: 0 16px; } }
 @media (max-width: 690px) {
     .max-width { padding: 0 22px; }
     .home-content .text-2 { font-size: 50px; }
