@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-<!-- It Only The START -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="google-site-verification" content="ylx88Xyfym2QKgrNGSZC5uXHDmM8W4uSQ5-gH-IAl-k" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/storage/emulated/0/Pictures/Picsart/Picsart_25-07-30_22-48-54-801.png" type="image/x-icon">
     <title>The Ritesh ShowCase</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -14,115 +11,169 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Star canvas background (global) -->
+    <canvas id="starfield"></canvas>
+
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
+
+    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">RITESH</a></div>
+            <div class="logo"><a href="#">RITESH<span>.</span></a></div>
             <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#services" class="menu-btn">Passion</a></li>
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#teams" class="menu-btn">Teams</a></li>
-                
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Passion</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#teams" class="nav-link">Teams</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certificates" class="nav-link">Certificate</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="menu-btn">
+            <div class="nav-link">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
 
-    <!-- home section start -->
-
+    <!-- HOME SECTION -->
+    <section class="home" id="home">
         <div class="home-video">
-        <video autoplay muted loop style="width:100%;">
-            <source src="assets/wallpaper.mp4" type="video/mp4">
-        </video>
+            
+            <div class="video-overlay"></div>
         </div>
-        <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">I Am</div>
-                <div class="text-2">Ritesh</div>
-                <div class="text-3">I'm a <span class="typing"></span></div>
-                <a href="#about">It's Only Beginning</a>
-                
+        <div class="home-content">
+            <div class="text-1">I Am</div>
+            <div class="text-2">Ritesh</div>
+            <div class="text-3">I'm a <span class="typing"></span></div>
+            <div class="home-btns">
+                <a href="#about" class="btn-primary">Explore My World</a>
+                <a href="/assets/CV.pdf" class="btn-outline">Download CV</a>
             </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/ai.ritesh_2007?igsh=YzljYTk1ODg3Zg==" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/ritesh-kumar-135bb237b?utm_source=share_via&utm_content=profile&utm_medium=member_android"target="_blank"title="linkedinn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.github.com/riteshkumar477823-wq/"target="_blank" title="github"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
         </div>
     </section>
 
-    <!-- about section start -->
+    <!-- ABOUT SECTION -->
     <section class="about" id="about">
         <div class="max-width">
             <h2 class="title">About Me</h2>
             <div class="about-content">
+                <div class="column left">
+                    <div class="profile-card">
+                        <div class="profile-img-wrap">
+                            <img src="https://ik.imagekit.io/b7hreicuc/20250730_220511.jpg?updatedAt=1754012447462" alt="Ritesh Kumar">
+                            <div class="profile-glow"></div>
+                        </div>
+                        <div class="profile-badge">
+                            <i class="fas fa-code"></i>
+                            <span>B.Tech CSE</span>
+                        </div>
+                        <div class="stats-row">
+                            <div class="stat">
+                                <span class="stat-num">5+</span>
+                                <span class="stat-label">Years Gaming</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-num">4+</span>
+                                <span class="stat-label">Years Editing</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-num">1+</span>
+                                <span class="stat-label">Year Dev</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="column right">
-                    <div class="text">I Am Ritesh Kumar & I Am a <span class="typing-2"></span></div>
-                    <p>I’m a coder, storyteller, and anime lover. My hobbie is to explore more ways to increase knowledge about tech & Upgrade myself to adapt in industry like works. I explore psychology, history, and dark philosophy while creating digital projects and writing intense dark-fantasy novels. Currently learning Japanese and building my own AI journey.</p>
-                    <a href="https://www.instagram.com/ai.ritesh_2007?igsh=YzljYTk1ODg3Zg==" >Instagram</a><br>
-                    <a href="https://www.youtube.com/">Youtube</a><br>
-                    <a href="https://discord.gg/Yec6yhU6">Discord</a>                   
+                    <div class="text" style="letter-spacing: 2px;">I Am Ritesh Kumar & I am a <span class="typing-2"></span></div>
+                    <div class="descrip">
+                     <p>I'm a coder, storyteller, and anime lover. My hobby is to explore more ways to increase knowledge about tech & upgrade myself to adapt in industry-like works. I explore psychology, history, and dark philosophy while creating digital projects and writing intense dark-fantasy novels. Currently learning Japanese and building my own AI journey.</p>
+                      <div class="about-tags">
+                        <span><i class="fas fa-gamepad"></i> Gamer</span>
+                        <span><i class="fas fa-film"></i> Editor</span>
+                        <span><i class="fas fa-robot"></i> AI Explorer</span>
+                        <span><i class="fas fa-book"></i> Dark Novelist</span>
+                        <span><i class="fas fa-language"></i> Learning Japanese</span>
+                      </div>
+                    </div>
+                    <div class="about-links">
+                        <a href="https://www.instagram.com/ai.ritesh_2007?igsh=YzljYTk1ODg3Zg==" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i> Youtube</a>
+                        <a
+                        href="https://www.linkedin.com/in/ritesh-kumar-135bb237b?utm_source=share_via&utm_content=profile&utm_medium=member_android"target="_blank"title="linkedinn"><i
+                        class="fab fa-linkedin"></i>Linkedin</a>
+                        <a
+                        href="https://www.github.com/riteshkumar477823-wq/"target="_blank"title="github"><i
+                        class="fab fa-github"></i>GitHub</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- services section start -->
+    <!-- PASSION SECTION -->
     <section class="services" id="services">
         <div class="max-width">
             <h2 class="title">My Passion</h2>
             <div class="serv-content">
                 <div class="card">
                     <div class="box">
-                        <i class="fas fa-paint-brush"></i>
+                        <div class="card-icon-wrap"><i class="fas fa-gamepad"></i></div>
                         <div class="text">Gamer</div>
-                        <p>
-
-Since 2019 Playing games of genre  " MMMOPRG , ACTION & MANY MORE ".....
-                        </p>
+                        <p>Since 2019 — playing games across genres: MMORPG, Action & many more. Gaming shaped my reflexes, strategy mindset and love for immersive worlds.</p>
+                        <div class="card-footer">Since 2019 · 5+ Years</div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <i class="fas fa-chart-line"></i>
+                        <div class="card-icon-wrap"><i class="fas fa-film"></i></div>
                         <div class="text">Editor</div>
-                        <p>
-Since 2020 Having 4 years + experience in " CAPUT, ALIGHT-MOTION, PICSART , VN EDITOR & MANY MORE"....
-                        </p>
-
+                        <p>4+ years of experience using CapCut, Alight Motion, PicsArt, VN Editor & more. Crafting visuals that hit different — cinematic edits with sound & motion.</p>
+                        <div class="card-footer">Since 2020 · 4+ Years</div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <i class="fas fa-code"></i>
+                        <div class="card-icon-wrap"><i class="fas fa-code"></i></div>
                         <div class="text">Web Dev</div>
-                        <p>
-Since 2024 having Knowledge in Web Development and By using AI to increase the production to 2 to 3 times...
-                        </p>
+                        <p>Since 2024 — building with HTML, CSS, JS and AI-assisted workflows that multiply my output 2–3x. The fusion of logic and creativity is my zone.</p>
+                        <div class="card-footer">Since 2024 · Growing Fast</div>
                     </div>
                 </div>
-               </div>
             </div>
         </div>
     </section>
 
-    <!-- skills section start -->
+    <!-- SKILLS SECTION -->
     <section class="skills" id="skills">
         <div class="max-width">
-            <h2 class="title">My skills</h2>
+            <h2 class="title">My Skills</h2>
             <div class="skills-content">
                 <div class="column left">
                     <div class="text">My creative skills & experiences.</div>
-                    <p>As I said I am a B tech CSE Student. I have Diploma in IT as well as thats why my foundational in Coding languages like c++,c, Python, shell is fine and i also have knowledge about cloud storage & cloud enginering, 
-                        data base mangement to Media API, Using AI so my production becomes 3 times & I am a Sound FX Artist as well as. Having good experience in Editing field and now Shifting to PC software. Feels Nice to work with you...
-                    </p>
-                    <a href="#about">Read more</a>
+                    <p>B.Tech CSE student with a Diploma in IT — my foundation in C++, C, Python, Shell is solid. I work with cloud storage, cloud engineering, database management, Media APIs, and AI tools to triple my production. I'm also a Sound FX Artist with strong editing roots now shifting to PC software.</p>
+                    <a href="#about">Read More <i class="fas fa-arrow-right"></i></a>
+                    <div class="tech-stack">
+                        <span>C++</span><span>Python</span><span>HTML/CSS</span><span>JS</span><span>Cloud</span><span>AI/ML</span>
+                    </div>
                 </div>
                 <div class="column right">
                     <div class="bars">
@@ -134,21 +185,21 @@ Since 2024 having Knowledge in Web Development and By using AI to increase the p
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>EDITING</span>
+                            <span>Editing</span>
                             <span>80%</span>
                         </div>
                         <div class="line css"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>SOUND FX ARTIST</span>
+                            <span>Sound FX Artist</span>
                             <span>40%</span>
                         </div>
                         <div class="line js"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>GAME</span>
+                            <span>Gaming</span>
                             <span>90%</span>
                         </div>
                         <div class="line php"></div>
@@ -165,42 +216,42 @@ Since 2024 having Knowledge in Web Development and By using AI to increase the p
         </div>
     </section>
 
-    <!-- teams section start -->
+    <!-- TEAMS SECTION -->
     <section class="teams" id="teams">
         <div class="max-width">
-            <h2 class="title">My teams</h2>
+            <h2 class="title">My Teams</h2>
             <div class="carousel owl-carousel">
                 <div class="card">
                     <div class="box">
-                        <img src="https://ik.imagekit.io/b7hreicuc/20250730_220511.jpg?updatedAt=1754012447462" alt="">
-                        <div class="text">Ritesh ( leader ) </div>
-                        <p>The visionary and leader of the team. I manage coding, storytelling, tech strategy, and creative direction—bringing all tools and minds together with clarity, passion, and purpose.</p>
+                        <img src="https://ik.imagekit.io/b7hreicuc/20250730_220511.jpg?updatedAt=1754012447462" alt="Ritesh">
+                        <div class="text">Ritesh <span class="badge">Leader</span></div>
+                        <p>The visionary and leader. I manage coding, storytelling, tech strategy, and creative direction — bringing all tools and minds together with clarity, passion, and purpose.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="https://ik.imagekit.io/b7hreicuc/1753985143939.jpg?updatedAt=1754012448855" alt="">
+                        <img src="https://ik.imagekit.io/b7hreicuc/1753985143939.jpg?updatedAt=1754012448855" alt="Sora GPT">
                         <div class="text">Sora the GPT</div>
-                        <p>My creative and research assistant—helps with content writing, story building, coding logic, and deep dives into psychology, AI, and human behavior. Always sharp, always with me.</p>
+                        <p>My creative and research assistant — helps with content writing, story building, coding logic, and deep dives into psychology, AI, and human behavior. Always sharp, always with me.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="https://ik.imagekit.io/b7hreicuc/1753985188738.jpg?updatedAt=1754012447953" alt="">
+                        <img src="https://ik.imagekit.io/b7hreicuc/1753985188738.jpg?updatedAt=1754012447953" alt="ImageKit">
                         <div class="text">ImageKit</div>
-                        <p>My reliable cloud buddy. Handles image, video, and music storage with lightning-fast delivery and optimization—keeping my digital assets safe, fast, and scalable.</p>
+                        <p>My reliable cloud buddy. Handles image, video, and music storage with lightning-fast delivery and optimization — keeping my digital assets safe, fast, and scalable.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="https://ik.imagekit.io/b7hreicuc/github-logo.webp?updatedAt=1754012447008" alt="">
+                        <img src="https://ik.imagekit.io/b7hreicuc/github-logo.webp?updatedAt=1754012447008" alt="GitHub">
                         <div class="text">Git Hub</div>
-                        <p>My trusted coder’s vault. Offers free hosting and version control for my web projects—perfect for deploying websites and managing code efficiently.</p>
+                        <p>My trusted coder's vault. Offers free hosting and version control for my web projects — perfect for deploying websites and managing code efficiently.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="https://ik.imagekit.io/b7hreicuc/1753985172735.jpg?updatedAt=1754012515673" alt="">
+                        <img src="https://ik.imagekit.io/b7hreicuc/1753985172735.jpg?updatedAt=1754012515673" alt="Gemini">
                         <div class="text">Gemini</div>
                         <p>My visual imagination engine. From concept to creation, Gemini generates stunning images that turn my ideas into beautiful, AI-powered visuals.</p>
                     </div>
@@ -209,16 +260,263 @@ Since 2024 having Knowledge in Web Development and By using AI to increase the p
         </div>
     </section>
 
-    <!-- contact section start -->
+<!-- ══════════════════ PROJECTS ══════════════════ -->
+<section class="projects" id="projects">
+    <div class="max-width">
+        <h2 class="title">Projects</h2>
+
+        <!-- Filter Tabs -->
+        <div class="proj-filters">
+            <button class="pf-btn active" data-filter="all">All</button>
+            <button class="pf-btn" data-filter="web">Web Dev</button>
+            <button class="pf-btn" data-filter="ai">AI / ML</button>
+            <button class="pf-btn" data-filter="edit">Editing</button>
+        </div>
+
+        <div class="proj-grid">
+
+            <!-- Card 1 -->
+            <div class="proj-card" data-cat="web">
+                <div class="proj-card-glow"></div>
+                <div class="proj-img-wrap">
+                    <div class="proj-img-placeholder pi-web">
+                      <img src="/assets/Komo-Logo.jpg">
+                    </div>
+                    <div class="proj-overlay">
+                        <a href="https://komoreebi.onrender.com" class="proj-ov-btn"><i class="fas fa-eye"></i> Live Demo</a>
+                        <a
+                        href="https://github.com/riteshkumar477823-wq/Komorebi/blob/main/README.md"
+                        class="proj-ov-btn proj-ov-gh"><i class="fab
+                        fa-github"></i>Know More</a>
+                    </div>
+                </div>
+                <div class="proj-body">
+                    <div class="proj-top-row">
+                        <span class="proj-cat web-cat">Web Dev</span>
+                        <span class="proj-status building"><span class="blink-dot"></span>Building</span>
+                    </div>
+                    <div class="proj-name">Komorebi</div>
+                    <p class="proj-desc">Komorebi is a minimalist Japanese
+                    learning web platform designed to help users master
+                    Hiragana, Katakana, and basic vocabulary through a clean,
+                    intuitive, and distraction-free interface. It focuses on
+                    structured learning and smooth user experience using HTML,
+                    CSS, and JavaScript.</p>
+                    <div class="proj-tech">
+                        <span>React</span><span>Node.js</span><span>Typescript</span>
+                    </div>
+                </div>
+                <div class="proj-card-line"></div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="proj-card" data-cat="ai">
+                <div class="proj-card-glow glow-purple"></div>
+                <div class="proj-img-wrap">
+                    <div class="proj-img-placeholder pi-ai">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="proj-overlay">
+                        <a href="#" class="proj-ov-btn"><i class="fas fa-eye"></i> Live Demo</a>
+                        <a href="#" class="proj-ov-btn proj-ov-gh"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+                <div class="proj-body">
+                    <div class="proj-top-row">
+                        <span class="proj-cat ai-cat">AI / ML</span>
+                        <span class="proj-status coming"><i class="fas fa-clock"></i> Soon</span>
+                    </div>
+                    <div class="proj-name">AI SignBridge</div>
+                    <p class="proj-desc">A Sign Language translator that works for all type of country people an universal translator that can integrate with any type of Input / Output hardware......</p>
+                    <div class="proj-tech">
+                        <span>JavaScript</span><span>AI API</span><span>NLP</span>
+                    </div>
+                </div>
+                <div class="proj-card-line line-purple"></div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="proj-card" data-cat="edit">
+                <div class="proj-card-glow glow-pink"></div>
+                <div class="proj-img-wrap">
+                    <div class="proj-img-placeholder pi-edit">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <div class="proj-overlay">
+                        <a href="#" class="proj-ov-btn"><i class="fas fa-play"></i> Watch</a>
+                        <a href="#" class="proj-ov-btn proj-ov-gh"><i class="fab fa-youtube"></i> Channel</a>
+                    </div>
+                </div>
+                <div class="proj-body">
+                    <div class="proj-top-row">
+                        <span class="proj-cat edit-cat">Editing</span>
+                        <span class="proj-status coming"><i class="fas fa-clock"></i> Soon</span>
+                    </div>
+                    <div class="proj-name">Cinematic Edit Reel</div>
+                    <p class="proj-desc">4+ years of motion editing compiled — CapCut, Alight Motion & VN edits with custom Sound FX and visual effects.</p>
+                    <div class="proj-tech">
+                        <span>CapCut</span><span>Alight Motion</span><span>VN</span>
+                    </div>
+                </div>
+                <div class="proj-card-line line-pink"></div>
+            </div>
+
+            <!-- Add More placeholder -->
+            <div class="proj-card proj-add-card">
+                <div class="proj-add-inner">
+                    <div class="proj-add-icon"><i class="fas fa-plus"></i></div>
+                    <div class="proj-add-text">More Coming Soon</div>
+                    <div class="proj-add-sub">Something epic is being built...</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ══════════════════ CERTIFICATES ══════════════════ -->
+<section class="certificates" id="certificates">
+    <div class="max-width">
+        <h2 class="title">Certificate</h2>
+
+        <div class="cert-grid" id="certGrid">
+
+            <!-- Certificate 1 — EDIT: change img src, title, issuer, date -->
+            <div class="cert-card">
+                <div class="cert-card-glow glow-cyan"></div>
+                <div class="cert-img-wrap">
+                    <img src="/assets/DIPLOMA IN IT.jpg" alt="Certificate 1" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="cert-img-fallback"><i class="fas fa-certificate"></i></div>
+                    <div class="cert-overlay">
+                        <a href="/assets/DIPLOMA IN IT.jpg" target="_blank" class="cert-view-btn"><i class="fas fa-expand"></i> View Full</a>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <div class="cert-badge cyan-badge"><i class="fas fa-medal"></i> Certified</div>
+                    <div class="cert-title">Diploma In IT</div>  <!-- EDIT -->
+                    <div class="cert-issuer"><i class="fas fa-building"></i>LAL BAHADUR SASTRI TRAINING INSTITUTE</div>  <!-- EDIT -->
+                    <div class="cert-date"><i class="fas fa-calendar-alt"></i>2024</div>  <!-- EDIT -->
+                </div>
+                <div class="cert-line"></div>
+            </div>
+
+            <!-- Certificate 2 — EDIT: change img src, title, issuer, date -->
+            <div class="cert-card">
+                <div class="cert-card-glow glow-purple"></div>
+                <div class="cert-img-wrap">
+                    <img src="/assets/IIT DELHI.jpg" alt="Certificate 2" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="cert-img-fallback"><i class="fas fa-certificate"></i></div>
+                    <div class="cert-overlay">
+                        <a href="/assets/IIT DELHI.jpg" target="_blank" class="cert-view-btn"><i class="fas fa-expand"></i> View Full</a>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <div class="cert-badge purple-badge"><i class="fas fa-medal"></i> Certified</div>
+                    <div class="cert-title">IIT DELHI SONIPATH DRONE TECHNOLOGY PARK</div>  <!-- EDIT -->
+                    <div class="cert-issuer"><i class="fas fa-building"></i> IIT Delhi</div>  <!-- EDIT -->
+                    <div class="cert-date"><i class="fas fa-calendar-alt"></i> 2026</div>  <!-- EDIT -->
+                </div>
+                <div class="cert-line line-purple"></div>
+            </div>
+
+            <!-- Certificate 3 — EDIT: change img src, title, issuer, date -->
+            <div class="cert-card">
+                <div class="cert-card-glow glow-pink"></div>
+                <div class="cert-img-wrap">
+                    <img src="/assets/QUIZZ.png" alt="Certificate 3" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="cert-img-fallback"><i class="fas fa-certificate"></i></div>
+                    <div class="cert-overlay">
+                        <a href="/assets/QUIZZ.png" target="_blank" class="cert-view-btn"><i class="fas fa-expand"></i> View Full</a>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <div class="cert-badge pink-badge"><i class="fas fa-medal"></i> Certified</div>
+                    <div class="cert-title">COMPETATIVE QUIZZ Competition</div>  <!-- EDIT -->
+                    <div class="cert-issuer"><i class="fas fa-building"></i>SDGI GLOBAL UNIVERSITY</div>  <!-- EDIT -->
+                    <div class="cert-date"><i class="fas fa-calendar-alt"></i>2026</div>  <!-- EDIT -->
+                </div>
+                <div class="cert-line line-pink"></div>
+            </div>
+
+        </div>
+
+        <!-- See All button -->
+        <div class="cert-see-all">
+            <button class="cert-all-btn" id="certToggleBtn">
+                <i class="fas fa-th-large"></i> Click Here to See All Certificates
+                <span class="cert-count-badge">3</span>
+            </button>
+        </div>
+
+    </div>
+
+    <!-- ── Full Screen Modal ── -->
+    <div class="cert-modal" id="certModal">
+        <div class="cert-modal-backdrop" id="certModalBackdrop"></div>
+        <div class="cert-modal-box">
+            <button class="cert-modal-close" id="certModalClose"><i class="fas fa-times"></i></button>
+            <div class="cert-modal-title"><i class="fas fa-certificate"></i> All My Certificates</div>
+            <div class="cert-modal-grid">
+
+                <!-- Modal Card 1 — EDIT same as above -->
+                <div class="cert-modal-card">
+                    <div class="cmc-img-wrap">
+                        <img src="/assets/DIPLOMA IN IT.jpg" alt="Cert 1" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="cert-img-fallback small"><i class="fas fa-certificate"></i></div>
+                    </div>
+                    <div class="cmc-info">
+                        <div class="cert-badge cyan-badge"><i class="fas fa-medal"></i> Certified</div>
+                        <div class="cmc-title">Your Certificate Title</div>  <!-- EDIT -->
+                        <div class="cmc-issuer"><i class="fas fa-building"></i> LAL BAHADUR SASTRI TRAINING INSTITUTE</div>  <!-- EDIT -->
+                        <div class="cmc-date"><i class="fas fa-calendar-alt"></i>2024</div>  <!-- EDIT -->
+                        <a href="/assets/DIPLOMA IN IT.jpg" target="_blank" class="cmc-view-btn"><i class="fas fa-external-link-alt"></i> Open Certificate</a>
+                    </div>
+                </div>
+
+                <!-- Modal Card 2 -->
+                <div class="cert-modal-card">
+                    <div class="cmc-img-wrap">
+                        <img src="assets/cert2.jpg" alt="Cert 2" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="cert-img-fallback small"><i class="fas fa-certificate"></i></div>
+                    </div>
+                    <div class="cmc-info">
+                        <div class="cert-badge purple-badge"><i class="fas fa-medal"></i> Certified</div>
+                        <div class="cmc-title">Your Certificate Title</div>  <!-- EDIT -->
+                        <div class="cmc-issuer"><i class="fas fa-building"></i> Issuer Name</div>  <!-- EDIT -->
+                        <div class="cmc-date"><i class="fas fa-calendar-alt"></i> Month Year</div>  <!-- EDIT -->
+                        <a href="assets/cert2.jpg" target="_blank" class="cmc-view-btn"><i class="fas fa-external-link-alt"></i> Open Certificate</a>
+                    </div>
+                </div>
+
+                <!-- Modal Card 3 -->
+                <div class="cert-modal-card">
+                    <div class="cmc-img-wrap">
+                        <img src="assets/cert3.jpg" alt="Cert 3" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="cert-img-fallback small"><i class="fas fa-certificate"></i></div>
+                    </div>
+                    <div class="cmc-info">
+                        <div class="cert-badge pink-badge"><i class="fas fa-medal"></i> Certified</div>
+                        <div class="cmc-title">Your Certificate Title</div>  <!-- EDIT -->
+                        <div class="cmc-issuer"><i class="fas fa-building"></i> Issuer Name</div>  <!-- EDIT -->
+                        <div class="cmc-date"><i class="fas fa-calendar-alt"></i> Month Year</div>  <!-- EDIT -->
+                        <a href="assets/cert3.jpg" target="_blank" class="cmc-view-btn"><i class="fas fa-external-link-alt"></i> Open Certificate</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+    <!-- CONTACT SECTION -->
     <section class="contact" id="contact">
         <div class="max-width">
-            <h2 class="title">Contact me</h2>
+            <h2 class="title">Contact Me</h2>
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Get in Touch</div>
-                    <p>
-
-                    </p>
+                    <p>Have a project idea, collab offer, or just want to say hi? My DMs and inbox are open. Let's build something together.</p>
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
@@ -230,55 +528,53 @@ Since 2024 having Knowledge in Web Development and By using AI to increase the p
                         <div class="row">
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="info">
-                                <div class="head">Address:</div>
-                                <div class="sub-title">A-BLOCK,G.D COLONY<br>MAYUR VIHAR 3 DELHI-110096</div>
+                                <div class="head">Address</div>
+                                <div class="sub-title">A-Block, G.D Colony<br>Mayur Vihar 3, Delhi — 110096</div>
                             </div>
                         </div>
                         <div class="row">
                             <i class="fas fa-envelope"></i>
                             <div class="info">
                                 <div class="head">Email</div>
-                                <div class="sub-title">riteshkumar****@gmail.com
-                                </div>
+                                <div class="sub-title">riteshkumar****@gmail.com</div>
                             </div>
                         </div>
                     </div>
+                    <div class="contact-socials">
+                        <a href="https://www.instagram.com/ai.ritesh_2007?igsh=YzljYTk1ODg3Zg==" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://discord.gg/Yec6yhU6" target="_blank"><i class="fab fa-discord"></i></a>
+                    </div>
                 </div>
-               <div class="column right">
-                    <div class="text">Message me</div>
-                    <form action="#">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" placeholder="Name" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" placeholder="Email" required>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <input type="text" placeholder="Subject" required>
-                        </div>
-                        <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
-                        </div>
-                        <div class="button-area">
-                            <button type="submit">Send message</button>
-                        </div>
-                    </form>
+                <div class="column right">
+                    <div class="text">Message Me</div>
+                    <form id="contactForm">
+                      <div class="fields">
+                         <div class="field name"><input type="text" id="cf-name" placeholder="Your Name" required></div>
+                          <div class="field email"><input type="email" id="cf-email" placeholder="Your Email" required></div>
+                      </div>
+    <div class="field"><input type="text" id="cf-subject" placeholder="Subject" required></div>
+    <div class="field textarea"><textarea id="cf-message" cols="30" rows="10" placeholder="Your Message..." required></textarea></div>
+    <div class="button-area">
+        <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+        <a href="mailto:riteshkumar477823@gmail.com" class="mail-me-btn">
+            <i class="fas fa-envelope-open-text"></i> Mail Me Directly
+        </a>
+    </div>
+</form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- footer section start -->
+    <!-- FOOTER -->
     <footer>
-        <span>By <a href="https://www.instagram.com/ai.ritesh_2007?igsh=YzljYTk1ODg3Zg==">RITESH KUMAR</a> | <span class="far fa-copyright"></span> 2025 All rights reserved.</span>
+        <div class="footer-content">
+            <div class="footer-logo">RITESH<span>.</span></div>
+            <span>Crafted with <i class="fas fa-heart"></i> by <a href="https://www.instagram.com/ai.ritesh_2007?igsh=YzljYTk1ODg3Zg==">RITESH KUMAR</a> &nbsp;|&nbsp; <i class="far fa-copyright"></i> 2025 All rights reserved.</span>
+        </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
